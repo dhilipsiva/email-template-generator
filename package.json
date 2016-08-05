@@ -1,6 +1,6 @@
 {
   "name": "email-template-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Email Template Generator. Generate unified templates for Sendgrid, Mandrill, etc. Using Sass, Jade and common layout.",
   "main": "index.js",
   "scripts": {
