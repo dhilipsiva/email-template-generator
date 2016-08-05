@@ -1,0 +1,46 @@
+@import "variables";
+/* -------------------------------------
+BUTTONS
+------------------------------------- */
+
+.btn {
+  box-sizing: $box-sizing;
+  width: 100%;
+  > tbody > tr > td {
+    padding-bottom: 15px;
+  }
+  table {
+    width: auto;
+    td {
+      background-color: $bg-color-hero;
+      border-radius: $border-radius;
+      text-align: center;
+    }
+  }
+  a {
+    background-color: $bg-color-hero;
+    border: solid 1px $color-theme;
+    border-radius: $border-radius;
+    box-sizing: $box-sizing;
+    color: $color-theme;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $font-size;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+
+.btn-primary {
+  table td {
+    background-color: $color-theme;
+  }
+  a {
+    background-color: $color-theme;
+    border-color: $color-theme;
+    color: $bg-color-hero;
+  }
+}

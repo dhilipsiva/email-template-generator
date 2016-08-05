@@ -1,0 +1,58 @@
+@import "variables";
+/* -------------------------------------
+BODY & CONTAINER
+------------------------------------- */
+
+.body {
+  background-color: $bg-color;
+  width: 100%;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+
+.container {
+  display: $display;
+  margin: 0 auto !important;
+  /* makes it centered */
+  max-width: $max-width;
+  padding: $padding-common;
+  width: auto !important;
+  width: $width;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+
+.content {
+  box-sizing: $box-sizing;
+  display: $display;
+  margin: 0 auto;
+  max-width: $width;
+  padding: $padding-common;
+}
+
+/* -------------------------------------
+HEADER, FOOTER, MAIN
+------------------------------------- */
+
+.main {
+  background: $bg-color-hero;
+  border-radius: $border-radius;
+  width: 100%;
+}
+
+.wrapper {
+  box-sizing: $box-sizing;
+  padding: $padding-wrapper;
+}
+
+.footer {
+  clear: both;
+  padding-top: $padding-common;
+  text-align: center;
+  width: 100%;
+  td, p, span, a {
+    color: $color-footer-text;
+    font-size: $font-size-footer;
+    text-align: center;
+  }
+}

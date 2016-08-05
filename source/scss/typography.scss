@@ -1,0 +1,38 @@
+@import "variables";
+/* -------------------------------------
+TYPOGRAPHY
+------------------------------------- */
+
+h1, h2, h3, h4 {
+  color: $color-heading;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: $line-height;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p, ul, ol {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+p li, ul li, ol li {
+  list-style-position: inside;
+  margin-left: 5px;
+}
+
+a {
+  color: $color-theme;
+  text-decoration: underline;
+}
