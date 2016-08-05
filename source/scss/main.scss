@@ -1,0 +1,322 @@
+$bg-color: #f6f6f6;
+$font-size: 14px;
+$font-size-footer: $font-size - 2;
+$font-family: sans-serif;
+$line-height: 1.4;
+$width: 580px;
+$max-width: $width;
+$bg-color-hero: #ffffff;
+$color-footer-text: #999999;
+$color-heading: #000000;
+$padding-common: 10px;
+$padding-wrapper: $padding-common * 2;
+$display: block;
+$box-sizing: border-box;
+$color-theme: #3498db;
+$color-theme-2: #34495e;
+$border-radius: 5px;
+
+/* -------------------------------------
+GLOBAL RESETS
+------------------------------------- */
+
+img {
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  font-size: $font-size;
+  line-height: $line-height;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+table {
+  border-collapse: separate;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  width: 100%;
+  td {
+    font-family: $font-family;
+    font-size: $font-size;
+    vertical-align: top;
+  }
+}
+
+/* -------------------------------------
+BODY & CONTAINER
+------------------------------------- */
+
+.body {
+  background-color: $bg-color;
+  width: 100%;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+
+.container {
+  display: $display;
+  margin: 0 auto !important;
+  /* makes it centered */
+  max-width: $max-width;
+  padding: $padding-common;
+  width: auto !important;
+  width: $width;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+
+.content {
+  box-sizing: $box-sizing;
+  display: $display;
+  margin: 0 auto;
+  max-width: $width;
+  padding: $padding-common;
+}
+
+/* -------------------------------------
+HEADER, FOOTER, MAIN
+------------------------------------- */
+
+.main {
+  background: $bg-color-hero;
+  border-radius: $border-radius;
+  width: 100%;
+}
+
+.wrapper {
+  box-sizing: $box-sizing;
+  padding: $padding-wrapper;
+}
+
+.footer {
+  clear: both;
+  padding-top: $padding-common;
+  text-align: center;
+  width: 100%;
+  td, p, span, a {
+    color: $color-footer-text;
+    font-size: $font-size-footer;
+    text-align: center;
+  }
+}
+
+/* -------------------------------------
+TYPOGRAPHY
+------------------------------------- */
+
+h1, h2, h3, h4 {
+  color: $color-heading;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: $line-height;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+p, ul, ol {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+p li, ul li, ol li {
+  list-style-position: inside;
+  margin-left: 5px;
+}
+
+a {
+  color: $color-theme;
+  text-decoration: underline;
+}
+
+/* -------------------------------------
+BUTTONS
+------------------------------------- */
+
+.btn {
+  box-sizing: $box-sizing;
+  width: 100%;
+  > tbody > tr > td {
+    padding-bottom: 15px;
+  }
+  table {
+    width: auto;
+    td {
+      background-color: $bg-color-hero;
+      border-radius: $border-radius;
+      text-align: center;
+    }
+  }
+  a {
+    background-color: $bg-color-hero;
+    border: solid 1px $color-theme;
+    border-radius: $border-radius;
+    box-sizing: $box-sizing;
+    color: $color-theme;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $font-size;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+
+.btn-primary {
+  table td {
+    background-color: $color-theme;
+  }
+  a {
+    background-color: $color-theme;
+    border-color: $color-theme;
+    color: $bg-color-hero;
+  }
+}
+
+/* -------------------------------------
+OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.preheader {
+  color: transparent;
+  display: none;
+  height: 0;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  mso-hide: all;
+  visibility: hidden;
+  width: 0;
+}
+
+.powered-by a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid $bg-color;
+  margin: 20px 0;
+}
+
+/* -------------------------------------
+RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+@media only screen and (max-width: 620px) {
+  table[class=body] {
+    h1 {
+      font-size: 28px !important;
+      margin-bottom: $padding-common !important;
+    }
+    p, ul, ol, td, span, a {
+      font-size: 16px !important;
+    }
+    .wrapper, .article {
+      padding: $padding-common !important;
+    }
+    .content {
+      padding: 0 !important;
+    }
+    .container {
+      padding: 0 !important;
+      width: 100% !important;
+    }
+    .main {
+      border-left-width: 0 !important;
+      border-radius: 0 !important;
+      border-right-width: 0 !important;
+    }
+    .btn {
+      table, a {
+        width: 100% !important;
+      }
+    }
+    .img-responsive {
+      height: auto !important;
+      max-width: 100% !important;
+      width: auto !important;
+    }
+  }
+}
+
+/* -------------------------------------
+PRESERVE THESE STYLES IN THE HEAD
+------------------------------------- */
+@media all {
+  .ExternalClass {
+    width: 100%;
+    line-height: 100%;
+    p, span, font, td, div {
+      line-height: 100%;
+    }
+  }
+  .apple-link a {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    text-decoration: none !important;
+  }
+  .btn-primary {
+    table td:hover {
+      background-color: $color-theme-2 !important;
+    }
+    a:hover {
+      background-color: $color-theme-2 !important;
+      border-color: $color-theme-2 !important;
+    }
+  }
+}
