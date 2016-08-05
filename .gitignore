@@ -37,6 +37,5 @@ jspm_packages
 .node_repl_history
 
 # Ignore all files
-source
 temp
 dist
