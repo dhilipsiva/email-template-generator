@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dhilipsiva/email-template-generator/issues"
   },
-  "homepage": "https://github.com/dhilipsiva/email-template-generator#readme"
+  "homepage": "https://github.com/dhilipsiva/email-template-generator#readme",
+  "dependencies": {
+    "node-sass": "^3.8.0"
+  }
 }
