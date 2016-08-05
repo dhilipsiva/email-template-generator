@@ -1,0 +1,24 @@
+{
+  "name": "email-template-generator",
+  "version": "0.0.1",
+  "description": "Email Template Generator. Generate unified templates for Sendgrid, Mandrill, etc. Using Sass, Jade and common layout.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhilipsiva/email-template-generator.git"
+  },
+  "keywords": [
+    "email",
+    "template",
+    "generator"
+  ],
+  "author": "dhilipsiva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhilipsiva/email-template-generator/issues"
+  },
+  "homepage": "https://github.com/dhilipsiva/email-template-generator#readme"
+}
