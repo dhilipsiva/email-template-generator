@@ -14,12 +14,14 @@
     cheerio = require('cheerio'),
     Inky = require('inky').Inky,
     minify = require('html-minifier').minify,
+
     sourceDir = "source/",
     distDir = "dist/",
     scssDir = sourceDir + "scss/",
     scssMain = scssDir + "main.scss",
     pugDir = sourceDir + "pug/",
     privateDir = pugDir + "private/",
+
     styles, html, inlinedHtml, $, result, css, inky, minifiedHtml, files, file,
     i, len, srcPath, targetPath;
 
@@ -39,7 +41,7 @@
       continue;
     }
     srcPath = privateDir + file;
-    targetPath = distDir + file + ".html";
+    targetPath = distDir + file.replace(".pug", ".html");
     // Render PUG to HTML
     html = pug.renderFile(srcPath);
 
@@ -67,9 +69,11 @@
     // Save the file
     fs.writeFile(targetPath, minifiedHtml, function(err) {
       if(err) {
-        return console.log(err);
+        console.log(err);
       }
-      console.log("Template generated: " + targetPath);
+      else{
+        console.log("Template generated: " + targetPath);
+      }
     });
   }
 })();
