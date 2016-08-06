@@ -6,12 +6,14 @@
 */
 (function(){
   'use strict';
+
   var sass = require('node-sass'),
     pug = require('pug'),
     juice = require('juice'),
     cheerio = require('cheerio'),
     Inky = require('inky').Inky,
-    styles, html, inlinedHtml, $, result, css, inky, options;
+    minify = require('html-minifier').minify,
+    styles, html, inlinedHtml, $, result, css, inky, options, minifiedHtml;
 
   options = {};
 
@@ -41,6 +43,9 @@
   $('a').attr("target", "_blank");
 
   // Save the File
-  console.log($.html());
-
+  minifiedHtml = minify($.html(), {
+    minifyCSS: true,
+    collapseWhitespace: true
+  });
+  console.log(minifiedHtml);
 })();
