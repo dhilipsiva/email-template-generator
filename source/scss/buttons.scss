@@ -6,9 +6,8 @@ BUTTONS
 .btn {
   box-sizing: $box-sizing;
   width: 100%;
-  > tbody > tr > td {
-    padding-bottom: 15px;
-  }
+  padding-bottom: 15px;
+
   table {
     width: auto;
     td {

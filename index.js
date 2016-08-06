@@ -10,21 +10,37 @@
     pug = require('pug'),
     juice = require('juice'),
     cheerio = require('cheerio'),
-    styles, html, inlinedHtml, $, result, css;
+    Inky = require('inky').Inky,
+    styles, html, inlinedHtml, $, result, css, inky, options;
 
+  options = {};
+
+  // Render SCSS to CSS
   styles = sass.renderSync({
     file: 'source/scss/main.scss',
     outputStyle: 'compressed',
   });
   css = styles.css.toString();
 
-  html = pug.renderFile('source/pug/layout.pug');
+  // Render PUG to HTML
+  html = pug.renderFile('source/pug/first.pug');
+
+  // Apply Inky on Previous HTML
+  $ = cheerio.load(html);
+  inky = new Inky();
+  html = inky.releaseTheKraken($);
+
+  // Apply the Styles Inline
   inlinedHtml = juice(html, {extraCss: css});
+
+  // Add Additional attributes to HTML
   $ = cheerio.load(inlinedHtml);
   $('table').attr("border", "0");
   $('table').attr("cellpadding", "0");
   $('table').attr("cellspacing", "0");
   $('a').attr("target", "_blank");
-  result = $.html()
-  console.log(result);
+
+  // Save the File
+  console.log($.html());
+
 })();
