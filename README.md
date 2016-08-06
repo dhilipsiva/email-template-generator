@@ -1,6 +1,6 @@
 # Email Template Generator
 
-Email Template Generator. Generate responsive & maintainable unified templates for Sendgrid, Mandrill, etc. Using SASS, Pug and common layout.
+Email Template Generator. Generate responsive, maintainable & unified templates for Sendgrid, Mandrill, etc. Using SASS, Pug and common layout.
 
 ![Email Template Generator](https://raw.githubusercontent.com/dhilipsiva/email-template-generator/master/sample.png)
 
