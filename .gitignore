@@ -39,4 +39,4 @@ jspm_packages
 # Ignore all files
 tmp
 dist
-source/contents
+source/pug/private
