@@ -8,18 +8,23 @@
   'use strict';
   var sass = require('node-sass'),
     pug = require('pug'),
-    juice = require('juice');
+    juice = require('juice'),
+    cheerio = require('cheerio'),
+    styles, html, inlinedHtml, $, result, css;
 
-  var result = sass.renderSync({
+  styles = sass.renderSync({
     file: 'source/scss/main.scss',
     outputStyle: 'compressed',
-    outFile: 'tmp/style.css',
-    sourceMap: false,
   });
-  var styles = result.css.toString();
+  css = styles.css.toString();
 
-  var html = pug.renderFile('source/pug/text.pug');
-  var result = juice(html, {extraCss: styles});
-
+  html = pug.renderFile('source/pug/layout.pug');
+  inlinedHtml = juice(html, {extraCss: css});
+  $ = cheerio.load(inlinedHtml);
+  $('table').attr("border", "0");
+  $('table').attr("cellpadding", "0");
+  $('table').attr("cellspacing", "0");
+  $('a').attr("target", "_blank");
+  result = $.html()
   console.log(result);
 })();
