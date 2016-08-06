@@ -9,7 +9,7 @@ Email Template Generator. Generate responsive & maintainable unified templates f
 1. Create your `pug` templates in `source/pug/private` (this is git ignored directory). You can use `SAMPLE.pug` that is found in the same folder for reference
 1. To make style changes, modify `source/scss/variables.scss` (or any together files in that directory)
 1. To make layout changes, modify `sources/pug/layout.pug`
-1. Finally, you need to run `node index.html` to generate your templates. Now you have responsive, maintainable, inlined & beautiful templates to use with your Sendgrid, Mandrill, Mailchimp, Mailgun, etc -  which will be compatible with virtually all mail clinets.
+1. Finally, you need to run `node index.html` to generate your templates (Will be found at `dist` folder - which again, is git ignored). Now you have responsive, maintainable, inlined & beautiful templates to use with your Sendgrid, Mandrill, Mailchimp, Mailgun, etc -  which will be compatible with virtually all mail clinets.
 
 
 ## References
