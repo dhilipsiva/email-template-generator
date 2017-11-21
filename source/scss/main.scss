@@ -5,6 +5,7 @@
 @import "buttons";
 @import "extras";
 @import "media";
+@import "fonts";
 
 /* -------------------------------------
 Extra Styles Goes Here
@@ -21,4 +22,83 @@ th {
       width: 25%;
     }
   }
+}
+
+.icon-wrapper {
+  th{
+    text-align: right;
+    padding-right: 10px;
+    .social-icon {
+      width: 15%;
+    }
+  }
+}
+
+.step-section {
+  border: 2px dashed #ccc;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  .main-icon-section {
+    margin-left: 20px
+  }
+  .other-icons-section {
+    margin-left: 80px
+  }
+  .arrow-icon {
+    width: 40px;
+    position: relative;
+    top: -50px
+  }
+}
+
+.logo-wrapper-custom {
+  .logo {
+    width: 25%;
+  }
+}
+
+p.para {
+  color: #343940;
+}
+
+.custom-layout {
+  max-width: 800px;
+  width: 800px;
+}
+
+.custom-layout {
+  p, th {
+    font-size: 16px;
+    font-family: gillsansmtpro;
+  }
+}
+
+.custom-layout .content {
+  max-width: 800px;
+}
+
+.box-content {
+  padding: 20px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 10px;
+  z-index: 2;
+  position: relative;
+  background-color: #fff
+}
+
+.user-heading {
+  font-weight: bold
+}
+
+.top-box-container {
+  z-index: 1;
+  position: relative;
+  top: 8px;
+  height: 20px;
+  width: 98%;
+  padding: 0px;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ebebeb
 }

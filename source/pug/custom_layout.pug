@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width")
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    title
+      block subject
+  body
+    row
+      columns &nbsp;
+      columns(class="container custom-layout")
+        div(class="content")
+          span(class="preheader")
+            block preview
+          row(class="main")
+            columns(class="wrapper")
+              row
+                columns(class="logo-wrapper-custom")
+                  img(src="https://raw.githubusercontent.com/appknox/press-kit/master/logo/logo-dark-small.png", class="logo")
+                columns(class="icon-wrapper")
+                  a(href="https://www.facebook.com/appknox", target="_blank")
+                    img(src="https://raw.githubusercontent.com/appknox/assets/master/images/fb.png", class="social-icon")
+                  a(href="https://twitter.com/appknox", target="_blank")
+                    img(src="https://raw.githubusercontent.com/appknox/assets/master/images/twitter.png", class="social-icon")
+                  a(href="https://www.linkedin.com/company/3771872/", target="_blank")
+                    img(src="https://raw.githubusercontent.com/appknox/assets/master/images/linkedin.png", class="social-icon")
+              div(class="top-box-container")      
+              div(class="box-content")
+                row
+                  columns
+                    p(class="user-heading") Hi %USERNAME%,
+                    block content
+                row      
+                  columns
+                    | Cheers,
+                    br
+                    span
+                      | The Appknox Team
+                    br
+                    a(href="mailto:support@appknox.com") support@appknox.com
+      columns &nbsp;

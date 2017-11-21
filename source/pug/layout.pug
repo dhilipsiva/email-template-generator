@@ -16,20 +16,28 @@ html
             columns(class="wrapper")
               row
                 columns(class="logo-wrapper")
-                  img(src="https://raw.githubusercontent.com/appknox/press-kit/master/logo/logo-dark-small.png", class="logo")
+                  img(src="https://raw.githubusercontent.com/appknox/press-kit/master/logo/logo-dark-small.png", class="logo", style="display:%SHOW_APPKNOX%")
+                  img(src="https://raw.githubusercontent.com/devknox/press-kit/master/logo/devknox.png", class="logo", style="display:%SHOW_DEVKNOX%")
               row
                 columns
-                  p Hi <%USERNAME%>,
+                  p Hi %USERNAME%
                   block content
               row
                 columns
                   | Cheers,
                   br
-                  | Team Appknox
+                  span(style="display:%SHOW_APPKNOX%")
+                    | Team Appknox
+                  span(style="display:%SHOW_DEVKNOX%")
+                    | Team Devknox
                   br
-                  a(href="mailto:support@appknox.com") support@appknox.com
+                  a(href="mailto:support@appknox.com", style="display:%SHOW_APPKNOX%") support@appknox.com
+                  a(href="mailto:support@devknox.io", style="display:%SHOW_DEVKNOX%") support@devknox.io
           div(class="footer")
             row
               columns
-                span(class="apple-link") Appknox, XYSec Labs, 71 Ayer Rajah Crescent, Singapore - 139951
+                span(class="apple-link", style="display:%SHOW_APPKNOX%")
+                  | Appknox, XYSec Labs, 79 Ayer Rajah Crescent, Singapore - 139951
+                span(class="apple-link", style="display:%SHOW_DEVKNOX%")
+                  | Devknox, XYSec Labs, 79 Ayer Rajah Crescent, Singapore - 139951
       columns &nbsp;

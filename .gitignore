@@ -40,3 +40,5 @@ jspm_packages
 tmp
 dist
 source/pug/private
+
+.DS_Store
