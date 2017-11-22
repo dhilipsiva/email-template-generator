@@ -46,8 +46,7 @@ th {
   }
   .arrow-icon {
     width: 40px;
-    position: relative;
-    top: -50px
+    margin-bottom: 50px
   }
 }
 
@@ -82,8 +81,6 @@ p.para {
   margin-top: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
-  z-index: 2;
-  position: relative;
   background-color: #fff
 }
 
