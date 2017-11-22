@@ -39,10 +39,14 @@ th {
   margin-bottom: 20px;
   border-radius: 50px;
   .main-icon-section {
-    margin-left: 20px
+    margin-left: 20px;
+    .social-icon {
+      margin-bottom: 15px
+    }
   }
-  .other-icons-section {
-    margin-left: 80px
+  .social-icon {
+    margin-top: 10px;
+    max-width: 150px;
   }
   .arrow-icon {
     width: 40px;
@@ -61,8 +65,8 @@ p.para {
 }
 
 .custom-layout {
-  max-width: 800px;
-  width: 800px;
+  max-width: 670px;
+  width: 670px;
 }
 
 .custom-layout {
@@ -73,7 +77,7 @@ p.para {
 }
 
 .custom-layout .content {
-  max-width: 800px;
+  max-width: 670px;
 }
 
 .box-content {
