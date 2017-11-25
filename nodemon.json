@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "ignore": ["dist/*"],
+  "watch": ["source"],
+  "exec": ["pug", "scss"]
+}
