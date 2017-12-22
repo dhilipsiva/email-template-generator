@@ -72,7 +72,7 @@
         console.log(err);
       }
       else{
-        console.log("Template generated: " + targetPath);
+        console.log("Template generated! ");
       }
     });
   }
