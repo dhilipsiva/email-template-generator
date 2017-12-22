@@ -8,30 +8,35 @@ html
   body
     row
       columns &nbsp;
-      columns(class="container")
+      columns
         div(class="content")
           span(class="preheader")
             block preview
           row(class="main")
-            columns(class="wrapper")
-              row
+            columns
+              row(class="theme-strap")
                 columns(class="logo-wrapper")
-                  img(src="https://raw.githubusercontent.com/appknox/press-kit/master/logo/appknox.png", class="logo")
+                  img(src="https://raw.githubusercontent.com/aircto/presskit/master/logo/aircto.png", class="logo")
               row
-                columns
-                  p Hi %USERNAME%
-                  block content
-              row
-                columns
-                  | Cheers,
-                  br
-                  span
-                    | Team Appknox
-                  br
-                  a(href="mailto:support@appknox.com") support@appknox.com
-          div(class="footer")
-            row
-              columns
-                span(class="apple-link")
-                  | Appknox, XYSec Labs, 79 Ayer Rajah Crescent, Singapore - 139951
+                columns.container
+                  row
+                    columns
+                      h1(class="subject")
+                        block subject
+
+                      p Hi %USERNAME%,
+                      block content
+
+                  hr
+                  row
+                    columns
+                      span(class="end-note") If you have any questions/concerns, please reply to this email or contact us
+                      br
+                      a(href="mailto:team@aircto.com") team@aircto.com
+                      br
+                      row
+                        columns(class="end-note")
+                         | 96 111 48603
+                        columns(class="right-text end-note")
+                         | @LaunchYard Ptv  Ltd 2017
       columns &nbsp;

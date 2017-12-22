@@ -12,22 +12,21 @@ BUTTONS
     width: auto;
     td {
       background-color: $bg-color-hero;
-      border-radius: $border-radius;
       text-align: center;
     }
   }
   a {
     background-color: $bg-color-hero;
-    border: solid 1px $color-theme;
+    border: solid 1px $color-theme-2;
     border-radius: $border-radius;
     box-sizing: $box-sizing;
-    color: $color-theme;
+    color: $color-theme-2;
     cursor: pointer;
     display: inline-block;
     font-size: $font-size;
     font-weight: bold;
     margin: 0;
-    padding: 12px 25px;
+    padding: 7px 25px;
     text-decoration: none;
     text-transform: capitalize;
   }
@@ -35,11 +34,11 @@ BUTTONS
 
 .btn-primary {
   table td {
-    background-color: $color-theme;
+    background-color: $color-theme-2;
   }
   a {
-    background-color: $color-theme;
-    border-color: $color-theme;
+    background-color: $color-theme-2;
+    border-color: $color-theme-2;
     color: $bg-color-hero;
   }
 }

@@ -5,17 +5,20 @@
 @import "buttons";
 @import "extras";
 @import "media";
-@import "fonts";
 
 /* -------------------------------------
 Extra Styles Goes Here
 ------------------------------------- */
 
+* {
+  font-family: Lato;
+}
 th {
   text-align: left;
 }
 
 .logo-wrapper {
+  padding: 10px;
   th{
     text-align: right;
     .logo {
@@ -54,29 +57,11 @@ th {
   }
 }
 
-.logo-wrapper-custom {
-  .logo {
-    width: 25%;
-  }
-}
-
 p.para {
   color: #343940;
 }
 
-.custom-layout {
-  max-width: 670px;
-  width: 670px;
-}
-
-.custom-layout {
-  p, th {
-    font-size: 16px;
-    font-family: gillsansmtpro;
-  }
-}
-
-.custom-layout .content {
+.content {
   max-width: 670px;
 }
 
@@ -94,4 +79,31 @@ p.para {
 
 .hyperlink {
   text-decoration: none;
+}
+
+.theme-strap {
+  background-color: $color-theme;
+  margin-bottom: 10px;
+  height: 74px;
+  .logo {
+      max-width: 80px;
+  }
+}
+
+.subject {
+    text-align: left;
+}
+
+.right-text {
+    th {
+    text-align: right;
+    font-size: $footer-text-size;
+    }
+}
+
+.end-note {
+  opacity: 0.38;
+  font-size: $footer-text-size;
+  letter-spacing: 0px;
+  color: #000000;
 }
